@@ -9,8 +9,8 @@ training an A-MLP (Augmented MLP) for a two-moon classification dataset can also
 
 
 ## How to compute the metrics by the code
-'python main_protection_level.py ----config-file cifar10/exp_config'
-the 'exp_config' contains all the configurations related to the pre-trained vanilla CNN and input data, such as image_size, number of channel, and etc.
+`python main_protection_level.py ----config-file cifar10/exp_config`
+the `exp_config` contains all the configurations related to the pre-trained vanilla CNN and input data, such as image_size, number of channel, and etc.
 # Citation
 @article{abbasi2019toward,
   title={Toward Metrics for Differentiating Out-of-Distribution Sets},
