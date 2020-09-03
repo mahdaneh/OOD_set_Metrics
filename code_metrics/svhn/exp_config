@@ -1,0 +1,30 @@
+[EXPERIMENT_SETTINGS]
+
+dataset_name = svhn
+
+#num training samples
+#tr_smpl = 73257
+#test_smpl = 26032
+
+tr_smpl = 10000
+test_smpl = 10000
+
+# training iterations
+epochs =30
+# number of samples in each batch
+batch_size = 64
+# learning rate 
+lr = 0.1
+#momentum
+momentum = 0.9
+#weight_decay
+weight_decay = 1e-4
+
+image_size=32
+num_chanl = 3
+num_class = 10 
+dustbin=False
+out_dist_flag=False
+out_name =none
+pre_net = exp_configsvhn_73257_30.pt
+
