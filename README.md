@@ -1,5 +1,5 @@
 # Metrics to differntiate the Out-of-Distribution (OOD) sets
-This repository contains the implementation of the metrics, namely **Softmax-based entropy, Coverage Ratio, Coverage Distance**, that are designed to measure the **protection level of in-distribution sub-manifolds in the feature space** by a given OOD set. The related paper is published in [ECAI 2020](http://ecai2020.eu/) and presented in [NeurIPS-Workshop on Safety and Robustness in Decision Making](https://sites.google.com/view/neurips19-safe-robust-workshop), 2019. This paper is also available at <https://arxiv.org/pdf/1910.08650.pdf>. 
+This repository contains the implementation of the metrics, namely **Softmax-based entropy (SE), Coverage Ratio (CR), Coverage Distance (CD)**, that are designed to measure the **protection level of in-distribution sub-manifolds in the feature space** by a given OOD set. The related paper is published in [ECAI 2020](http://ecai2020.eu/) and presented in [NeurIPS-Workshop on Safety and Robustness in Decision Making](https://sites.google.com/view/neurips19-safe-robust-workshop), 2019. This paper is also available at <https://arxiv.org/pdf/1910.08650.pdf>. 
 
 ## An illustrative explaination
 The following figure illustrates intutively the idea of protection level. We differentiate the OOD sets with their level of protection. For example, the middle figure exhibits a partially-protective OOD set (shown by green triangles), while the right figure shows a protective OOD set. Their effect on
@@ -8,9 +8,9 @@ training an A-MLP (Augmented MLP) for a two-moon classification dataset can also
 
 
 
-## How to compute the metrics by the code
-`python main_protection_level.py ----config-file cifar10/exp_config`
-the `exp_config` contains all the configurations related to the pre-trained vanilla CNN and input data, such as image_size, number of channel, and etc.
+## How to run the code
+`python main_protection_level.py --config-file cifar10/exp_config`
+the `exp_config` contains all the configurations related to the pre-trained vanilla CNN and input data, such as image_size, number of channel, and etc. The **SE, CR , and CD** of each OOD set is computed and all are stored in a `.csv` file.
 # Citation
 @article{abbasi2019toward,
   title={Toward Metrics for Differentiating Out-of-Distribution Sets},
