@@ -10,8 +10,11 @@ training an A-MLP (Augmented MLP) for a two-moon classification dataset can also
 
 ## How to run the code
 `python main_protection_level.py --config-file cifar10/exp_config`
-the `exp_config` contains all the configurations related to the pre-trained vanilla CNN and input data, such as image_size, number of channel, and etc. The **SE, CR , and CD** of each OOD set is computed and all are stored in a `.csv` file.
-# Citation
+the `exp_config` contains all the configurations related to the pre-trained vanilla CNN and input data, such as image_size, number of channel, and etc. **Note** that you need to specify address to a pre-trained vanilla CNN in `exp_config` file; e.g. `pre_net=cifar10/pretrained_model_filename`. In `model_building.py`, there are VGG and ResNet architectures to be used, modify `model_building.py` to add your sepecific architecture. 
+
+The script outputs a `.csv` file, in which each row has **SE, CR ,and CD** of an OOD set.
+
+## Citation
 @article{abbasi2019toward,
   title={Toward Metrics for Differentiating Out-of-Distribution Sets},
   author={Abbasi, Mahdieh and Shui, Changjian and Rajabi, Arezoo and Gagne, Christian and Bobba, Rakesh},
