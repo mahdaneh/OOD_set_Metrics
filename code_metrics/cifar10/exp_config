@@ -1,0 +1,28 @@
+[EXPERIMENT_SETTINGS]
+
+dataset_name = cifar10
+
+#num training samples
+tr_smpl = 10000
+test_smpl = 10000
+
+
+# training iterations
+epochs = 50
+# number of samples in each batch
+batch_size = 64
+# learning rate 
+lr = 0.01
+#momentum
+momentum = 0.9
+#weight_decay
+weight_decay = 1e-4
+
+image_size=32
+num_chanl = 3
+num_class = 10 
+dustbin=False
+out_dist_flag=False
+out_name=None
+pre_net = exp_configcifar10_50000_50.pt
+
