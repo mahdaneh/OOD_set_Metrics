@@ -18,9 +18,13 @@ The script outputs a `.csv` file, in which each row has **SE, CR ,and CD** of an
 
 ## Citation
 `@article{abbasi2019toward,
+
   title={Toward Metrics for Differentiating Out-of-Distribution Sets},
+  
   author={Abbasi, Mahdieh and Shui, Changjian and Rajabi, Arezoo and Gagne, Christian and Bobba, Rakesh},
+  
   journal={European Conference on Artificial Intelligence},
+  
   year={2020}
 }`
 
